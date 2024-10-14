@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Fanny Boussard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f9f3e8;
+            color: #333;
+            font-size: 14px;
+        }
+        h1, h2, h3 {
+            color: #5a3e2b;
+            margin: 5px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-column, .right-column {
+            width: 48%;
+        }
+        .section {
+            margin-bottom: 10px;
+        }
+        .contact, .skills, .experience, .education, .interests {
+            padding: 5px;
+            background-color: #fff6e5;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            padding-left: 15px;
+            margin-bottom: 5px;
+        }
+        .photo-qr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .photo {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .qr-codes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Aligne les QR codes à droite */
+            justify-content: center;
+        }
+        .qr-code {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 5px; /* Espace entre les QR codes */
+        }
+        .qr-label {
+            text-align: center;
+            font-size: 12px;
+            color: #5a3e2b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fanny Boussard</h1>
+    <div class="photo-qr">
+        <img src="fanny.webp" alt="Photo de Fanny Boussard" class="photo">
+        <div class="qr-codes">
+            <div>
+                <img src="qr_code_linkedin_fanny.png" alt="QR Code LinkedIn" class="qr-code">
+                <p class="qr-label">LinkedIn</p>
+            </div>
+            <div>
+                <img src="github_qr_code_fanny.png" alt="QR Code GitHub" class="qr-code">
+                <p class="qr-label">GitHub</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Colonne gauche -->
+        <div class="left-column">
+            <p><strong>Développeuse Logiciel/Web</strong></p>
+            <p>Email : <a href="mailto:boussard.fanny@gmail.com">boussard.fanny@gmail.com</a> | Tel : 06 41 80 06 43</p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/fanny-boussard-5895b788">Fanny Boussard</a> | GitHub : <a href="https://github.com/faboussard">faboussard</a></p>
+            <p>Localisation : France | Langues : Français (natif), Anglais, Allemand, Espagnol</p>
+
+            <div class="section contact">
+                <h2>Résumé</h2>
+                <p>Développeuse passionnée en reconversion avec une expérience en développement front-end et analyse de données, ainsi qu'un solide bagage en gestion de projets internationaux. Compétences en C, C++, Python, HTML, CSS, JavaScript et React, avec une appétence pour l'intelligence artificielle et l'interface utilisateur.</p>
+            </div>
+
+            <div class="section experience">
+                <h2>Expériences Professionnelles</h2>
+                <h3>Développeuse Front-End - Juba</h3>
+                <p><em>Janv. 2023 - Sept. 2023 | Lyon, France</em></p>
+                <ul>
+                    <li>Développement de supports de marketing pour une solution d'IA en vision par ordinateur.</li>
+                    <li>Optimisation des performances front-end.</li>
+                </ul>
+
+                <h3>Power BI Data Analyst - Mantu</h3>
+                <p><em>Juil. 2023 (1 mois) | Lyon, France</em></p>
+                <ul>
+                    <li>Redesign d'un tableau de bord et création de nouvelles métriques.</li>
+                </ul>
+
+                <h3>Project Manager - Bolle Safety</h3>
+                <p><em>Fév. 2022 - Janv. 2023 | Lyon, France</em></p>
+                <ul>
+                    <li>Gestion de projets de rebranding et packaging.</li>
+                </ul>
+
+                <h3>Manager de Magasin et Musée - La Savonnerie du Midi</h3>
+                <p><em>Avril 2021 - Janv. 2022 | Marseille, France</em></p>
+                <ul>
+                    <li>Gestion d'équipe, ventes, événements, et promotion de la boutique et du musée.</li>
+                </ul>
+
+                <h3>Data Analyst / Demand Planner - Maisons du Monde</h3>
+                <p><em>Nov. 2018 - Déc. 2020 | Nantes, France</em></p>
+                <ul>
+                    <li>Prévisions et gestion de stocks, création et suivi des KPIs.</li>
+                    <li>Elaboration et recettages du nouveau logiciel de prévisions de vente.</li>
+                </ul>
+
+                <h3>Coordonnatrice de Flux de Données - RB</h3>
+                <p><em>Avril 2017 - Oct. 2018 | Paris, France</em></p>
+                <ul>
+                    <li>Gestion des flux informatiques pour les stocks, gestion de litiges, communication interservices.</li>
+                    <li>Participation à la transition des ERPs de JDE vers SAP</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="right-column">
+            <div class="section skills">
+                <h2>Compétences Techniques</h2>
+                <ul>
+                    <li><strong>Langages :</strong> C, C++, Python, HTML, CSS, JavaScript, React</li>
+                    <li><strong>Bases de données :</strong> SQL, NoSQL</li>
+                    <li><strong>DevOps :</strong> Docker, Kubernetes, GitHub</li>
+                    <li><strong>Systèmes :</strong> Linux, Bash, Admin système</li>
+                    <li><strong>Analyse de données :</strong> Excel, Microsoft Power BI</li>
+                </ul>
+            </div>
+
+            <div class="section education">
+                <h2>Formation</h2>
+                <p><strong>42 École</strong> - Diplôme en Informatique (2023 - 2025)</p>
+                <p><strong>Université de Nantes</strong> - Master en Logistique Internationale (2016)</p>
+                <p><strong>Ecole de Commerce de La Rochelle</strong> - Bachelor en Commerce (2014)</p>
+            </div>
+
+            <div class="section interests">
+                <h2>Intérêts</h2>
+                <p>IA, LLM, Interfaces utilisateurs (UI/UX), Vision par ordinateur</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
