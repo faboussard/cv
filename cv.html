@@ -16,7 +16,7 @@
         }
         h1, h2, h3 {
             color: #5a3e2b;
-            margin: 5px 0;
+            margin: 3px 0;
         }
         .header {
             display: flex;
@@ -25,26 +25,27 @@
             margin-bottom: 10px;
         }
         .left-column, .right-column {
-            width: 48%;
+            width: 49%;
         }
         .section {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .contact, .skills, .experience, .education, .interests {
-            padding: 5px;
+            padding: 4px;
             background-color: #fff6e5;
             border-radius: 5px;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
         }
         ul {
-            padding-left: 15px;
-            margin-bottom: 5px;
+            padding-left: 10px;
+            margin-bottom: 4px;
         }
         .photo-qr {
             display: flex;
             align-items: center;
         }
         .photo {
+            margin-left: 50px;
             border-radius: 50%;
             width: 80px;
             height: 80px;
@@ -52,13 +53,14 @@
             margin-right: 10px;
         }
         .qr-codes {
+            margin-left: 50px;
             display: flex;
             align-items: center;
+            gap: 50px; /* Moins d'espace entre les QR codes */
         }
         .qr-code {
             width: 50px;
             height: 50px;
-            margin-left: 5px; /* Space between QR codes */
         }
         .qr-label {
             text-align: center;
@@ -71,7 +73,7 @@
         }
         .contact-info {
             text-align: right;
-            margin-left: 20px;
+            margin-left: 10px;
         }
         .contact-info p {
             margin: 2px 0;
@@ -81,6 +83,18 @@
         }
         .experience p {
             margin-top: 2px; /* Réduire la marge supérieure de p */
+        }
+        /* Réduction de l'espace entre le titre et les paragraphes dans la colonne droite */
+        .skills h2, .education h2, .interests h2 {
+            margin-bottom: 2px; /* Réduire l'espace sous le titre */
+        }
+        .skills p, .education p, .interests p {
+            margin-top: 2px; /* Réduire l'espace au-dessus des paragraphes */
+        }
+        /* Style pour les logos */
+        .logo {
+            width: 20px;
+            height: 20px;
         }
     </style>
 </head>
@@ -92,11 +106,11 @@
             <div class="qr-codes">
                 <div>
                     <img src="qr_code_linkedin_fanny.png" alt="QR Code LinkedIn" class="qr-code">
-                    <p class="qr-label">LinkedIn</p>
+                    <img src="LI-In-Bug.png" alt="Logo LinkedIn" class="logo"> <!-- Logo LinkedIn -->
                 </div>
                 <div>
                     <img src="github_qr_code_fanny.png" alt="QR Code GitHub" class="qr-code">
-                    <p class="qr-label">GitHub</p>
+                    <img src="github-mark.png" alt="Logo GitHub" class="logo"> <!-- Logo GitHub -->
                 </div>
             </div>
         </div>
@@ -104,7 +118,7 @@
             <h1>Fanny Boussard</h1>
             <p>Email : <a href="mailto:boussard.fanny@gmail.com">boussard.fanny@gmail.com</a></p>
             <p>Tel : 06 41 80 06 43</p>
-            <p>Lyon | Langues : Français (natif), Anglais, Allemand, Espagnol</p>
+            <p>Lyon | 31 ans | anglais, espagnol et allemand professionnel</p>
         </div>
     </div>
 
@@ -156,32 +170,34 @@
 
         <!-- Colonne droite -->
         <div class="right-column">
+            <div class="section contact">
+                <h3>Je réaliserai vos projets avec créativité, rigueur et transversalité</h3>
+                <p>Passionnée de technologies et du code informatique, je suis très curieuse et j'apprends vite. j'ai des expériences variées en admin sys, infra et développement full stack, en analyse de données, ainsi qu'un solide bagage en gestion de projets internationaux.</p>
+            </div>
             <div class="section skills">
-                <h2>Compétences Techniques</h2>
+                <h3>Compétences Techniques</h3>
                 <ul>
                     <li><strong>Langages :</strong> C, C++, Python, HTML, CSS, JavaScript, React</li>
                     <li><strong>Bases de données :</strong> SQL, NoSQL</li>
-                    <li><strong>DevOps :</strong> Docker, Kubernetes, GitHub</li>
-                    <li><strong>Systèmes :</strong> Linux, Bash, Admin système</li>
-                    <li><strong>Analyse de données :</strong> Excel, Microsoft Power BI</li>
+                    <li><strong>DevOps :</strong> Docker, VM, Kubernetes, GitHub (issues, actions...)</li>
+                    <li><strong>Systèmes :</strong> Linux, Bash, Administration système</li>
+                    <li><strong>Analyse de données :</strong> Excel (VBA), Power BI</li>
                 </ul>
             </div>
-
-            <div class="section contact">
-                <h2>Résumé</h2>
-                <p>Développeuse passionnée en reconversion avec une expérience en développement front-end et analyse de données, ainsi qu'un solide bagage en gestion de projets internationaux. Compétences en C, C++, Python, HTML, CSS, JavaScript et React, avec une appétence pour l'intelligence artificielle et l'interface utilisateur.</p>
-            </div>
-
             <div class="section education">
-                <h2>Formation</h2>
-                <p><strong>42 École</strong> - Diplôme en Informatique (2023 - 2025)</p>
+                <h3>Formation</h3>
+                <p><strong>École 42 Lyon</strong> - Diplôme en Informatique (2023 - 2025) débouchant sur un titre RNCP</p>
                 <p><strong>Université de Nantes</strong> - Master en Logistique Internationale (2016)</p>
                 <p><strong>Ecole de Commerce de La Rochelle</strong> - Bachelor en Commerce (2014)</p>
             </div>
 
             <div class="section interests">
-                <h2>Intérêts</h2>
-                <p>IA, LLM, Interfaces utilisateurs (UI/UX), Vision par ordinateur</p>
+                <h3>Intérêts</h3>
+                <p>DevOps, IA, LLM, Interfaces utilisateurs (UI/UX), Gestion de projets</p>
+            </div>
+            <div class="section interests">
+                <h3>Hobbies</h3>
+                <p>nager dans les lacs, jouer à des jeux de société ou aux échecs avec du bon cidre, lire de la littérature étrangère, aller à des meetups</p>
             </div>
         </div>
     </div>
