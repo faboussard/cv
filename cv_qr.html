@@ -49,7 +49,7 @@
         .contact:hover, .skills:hover, .experience:hover, .education:hover, .interests:hover {
             transform: translateY(-5px);
         }
-        .photo-logos {
+        .photo-qr {
             display: flex;
             align-items: center;
         }
@@ -62,10 +62,19 @@
             margin-right: 20px;
             border: 3px solid #c04b37;
         }
-        .logos {
+        .qr-codes {
             display: flex;
             align-items: center;
             gap: 20px;
+        }
+        .qr-code {
+            width: 50px;
+            height: 50px;
+            border-radius: 10%;
+            transition: transform 0.3s;
+        }
+        .qr-code:hover {
+            transform: scale(1.1);
         }
         .logo {
             width: 25px;
@@ -77,11 +86,16 @@
         .contact-info p {
             margin: 3px 0;
         }
+        /* Pour espacer les paragraphes dans les sections */
+        .skills p, .experience p, .education p, .interests p {
+            margin-bottom: 10px;
+        }
         .container {
             display: flex;
             justify-content: space-between;
             gap: 20px;
         }
+        /* Responsive Design */
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -95,16 +109,16 @@
 <body>
 
     <div class="header">
-        <div class="photo-logos">
+        <div class="photo-qr">
             <img src="fanny.webp" alt="Photo de Fanny Boussard" class="photo">
-            <div class="logos">
+            <div class="qr-codes">
                 <div>
+                    <img src="qr_code_linkedin_fanny.png" alt="QR Code LinkedIn" class="qr-code">
                     <img src="LI-In-Bug.png" alt="Logo LinkedIn" class="logo">
-                    <a href="https://www.linkedin.com/in/fanny-boussard-5895b788/" target="_blank">LinkedIn</a>
                 </div>
                 <div>
+                    <img src="github_qr_code_fanny.png" alt="QR Code GitHub" class="qr-code">
                     <img src="github-mark.png" alt="Logo GitHub" class="logo">
-                    <a href="https://github.com/faboussard" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
