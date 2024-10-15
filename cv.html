@@ -82,12 +82,84 @@
             justify-content: space-between;
             gap: 20px;
         }
+        .surprise-button {
+            background-color: #c04b37;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .surprise-button:hover {
+            background-color: #a0382b;
+        }
+        .hire-me-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #c04b37;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            z-index: 1000;
+        }
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
             }
             .left-column, .right-column {
                 width: 100%;
+            }
+        }
+        @media print {
+            .container {
+                display: flex;
+                flex-direction: row; /* Assure que les colonnes restent côte à côte */
+                justify-content: space-between;
+            }
+            .left-column, .right-column {
+                width: 48%;  /* Assure-toi que la largeur est suffisante pour les deux colonnes */
+                box-sizing: border-box; /* Pour s'assurer que le padding est inclus dans la largeur */
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #c04b37;
+                padding-bottom: 10px;
+            }
+            .photo-logos {
+                display: flex;
+                align-items: center;
+            }
+            .photo {
+                margin-left: 50px;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 20px;
+                border: 3px solid #c04b37;
+            }
+            .logos {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            .logo {
+                width: 25px;
+                height: 25px;
+            }
+            .contact-info {
+                text-align: right;
+            }
+            .contact-info p {
+                margin: 3px 0;
             }
         }
     </style>
@@ -106,12 +178,13 @@
                     <img src="github-mark.png" alt="Logo GitHub" class="logo">
                     <a href="https://github.com/faboussard" target="_blank">GitHub</a>
                 </div>
+                <button class="surprise-button" onclick="showSurprise()">Surprise</button>
             </div>
         </div>
         <div class="contact-info">
             <h1>Fanny Boussard</h1>
-            <p>Email : <a href="mailto:boussard.fanny@gmail.com">boussard.fanny@gmail.com</a></p>
-            <p>Tel : 06 41 80 06 43</p>
+            <p><a href="mailto:boussard.fanny@gmail.com">boussard.fanny@gmail.com</a></p>
+            <p>+33 6 41 80 06 43</p>
             <p>Villeurbanne | 31 ans | parle anglais, espagnol et allemand</p>
         </div>
     </div>
@@ -148,7 +221,7 @@
 
         <div class="right-column">
             <div class="section contact">
-                <h3>Je réaliserai vos projets avec créativité, rigueur et transversalité</h3>
+                <h3>Je facilite la collaboration pour atteindre nos objectifs, avec rigueur et créativité</h3>
                 <p>Passionnée de technologies et du code informatique, je suis très curieuse et j'apprends vite. J'ai des expériences variées en admin sys, infra et développement full stack, en analyse de données, ainsi qu'un solide bagage en gestion de projets internationaux.</p>
             </div>
             <div class="section skills">
@@ -175,6 +248,18 @@
             </div>
         </div>
     </div>
+
+    <div class="hire-me-message" id="hireMeMessage">Hire me!</div>
+
+    <script>
+        function showSurprise() {
+            const message = document.getElementById('hireMeMessage');
+            message.style.display = 'block';
+            setTimeout(() => {
+                message.style.display = 'none';
+            }, 5000);
+        }
+    </script>
 
 </body>
 </html>
